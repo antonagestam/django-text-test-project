@@ -1,0 +1,43 @@
+{% load editable %}
+<!DOCTYPE html>
+<html>
+    <head lang="sv">
+        <meta charset="UTF-8">
+        <title>Dummy project</title>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' />
+        <style>
+            body {
+                font-family: 'Playfair Display', serif;
+                font-size: 20px;
+                padding: 100px 300px;
+                /*background: #eee;*/
+                background: #ffc184; /* Old browsers */
+                background: -moz-linear-gradient(top,  #ffc184 0%, #ff89fd 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc184), color-stop(100%,#ff89fd)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #ffc184 0%,#ff89fd 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #ffc184 0%,#ff89fd 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #ffc184 0%,#ff89fd 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #ffc184 0%,#ff89fd 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc184', endColorstr='#ff89fd',GradientType=0 ); /* IE6-9 */
+            }
+
+            p {
+                line-height: 1.8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>{% editable "header" "Hello there!" %}</h1>
+
+        {% blockeditable "content" "html" %}
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, magna at mattis placerat, massa felis sagittis lectus, id pellentesque nunc nibh et velit. Aliquam massa justo, ullamcorper ut enim nec, sagittis pulvinar ex. Duis ac lacinia lectus, sed mollis tortor. In et interdum mauris. Quisque suscipit mattis neque at rutrum. Integer in porta quam. Nam egestas interdum magna, sed mollis tellus volutpat at. Aenean maximus faucibus quam, non faucibus lacus. Maecenas ultrices rhoncus dolor, fermentum imperdiet nunc bibendum iaculis. Ut ac ligula ipsum. In suscipit tempus viverra. Integer pellentesque lacus nec fermentum cursus. Nunc malesuada dui non elit finibus tincidunt. Etiam posuere diam eget finibus convallis. Quisque semper egestas ex, in ultricies tellus efficitur sit amet. Curabitur mattis ornare feugiat.
+            </p>
+
+            <p>
+                In egestas, metus ut sagittis facilisis, felis orci feugiat nibh, quis dapibus metus nisi condimentum nulla. Integer ut rutrum nulla. Suspendisse eget iaculis magna. Aliquam varius efficitur massa sit amet tincidunt. Aliquam felis dui, mattis ut turpis vel, molestie suscipit leo. Etiam ornare dui velit, sed auctor libero egestas eu. Morbi rhoncus ante ut dui pellentesque elementum. Nulla facilisi. Suspendisse nec pharetra augue. Donec tincidunt fringilla posuere. In nec diam vel velit lacinia auctor at ut urna. Nullam consectetur sem quis risus egestas commodo non at dolor.
+            </p>
+        {% endblockeditable %}
+    </body>
+</html>
