@@ -1,4 +1,4 @@
-{% load editable %}
+{% load text %}
 <!DOCTYPE html>
 <html>
     <head lang="sv">
@@ -28,9 +28,9 @@
     </head>
 
     <body>
-        <h1>{% editable "header" "Hello there!" %}</h1>
+        <h1>{% text "header" "Hello there!" %}</h1>
 
-        {% blockeditable "content" "html" %}
+        {% blocktext "content" "html" %}
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat, magna at mattis placerat, massa felis sagittis lectus, id pellentesque nunc nibh et velit. Aliquam massa justo, ullamcorper ut enim nec, sagittis pulvinar ex. Duis ac lacinia lectus, sed mollis tortor. In et interdum mauris. Quisque suscipit mattis neque at rutrum. Integer in porta quam. Nam egestas interdum magna, sed mollis tellus volutpat at. Aenean maximus faucibus quam, non faucibus lacus. Maecenas ultrices rhoncus dolor, fermentum imperdiet nunc bibendum iaculis. Ut ac ligula ipsum. In suscipit tempus viverra. Integer pellentesque lacus nec fermentum cursus. Nunc malesuada dui non elit finibus tincidunt. Etiam posuere diam eget finibus convallis. Quisque semper egestas ex, in ultricies tellus efficitur sit amet. Curabitur mattis ornare feugiat.
             </p>
@@ -38,6 +38,6 @@
             <p>
                 In egestas, metus ut sagittis facilisis, felis orci feugiat nibh, quis dapibus metus nisi condimentum nulla. Integer ut rutrum nulla. Suspendisse eget iaculis magna. Aliquam varius efficitur massa sit amet tincidunt. Aliquam felis dui, mattis ut turpis vel, molestie suscipit leo. Etiam ornare dui velit, sed auctor libero egestas eu. Morbi rhoncus ante ut dui pellentesque elementum. Nulla facilisi. Suspendisse nec pharetra augue. Donec tincidunt fringilla posuere. In nec diam vel velit lacinia auctor at ut urna. Nullam consectetur sem quis risus egestas commodo non at dolor.
             </p>
-        {% endblockeditable %}
+        {% endblocktext %}
     </body>
 </html>
